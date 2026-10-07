@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>QR Studio — Buat kode QR gratis</title>
+    <meta name="description" content="Buat kode QR untuk tautan, WiFi, kontak, WhatsApp, lokasi, dan lainnya. Gratis, tanpa login, tanpa iklan, bisa dipakai offline." />
+    <meta name="theme-color" content="#f6f5f1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="QR Studio" />
+    <meta property="og:title" content="QR Studio — Buat kode QR gratis" />
+    <meta property="og:description" content="Gratis, tanpa login, semua diproses di perangkatmu." />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="/theme-init.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Langsung ke isi</a>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#buat" aria-label="QR Studio, ke halaman utama">
+          <img src="/favicon.svg" alt="" width="30" height="30" />
+          <span>QR Studio</span>
+        </a>
+        <nav class="tabs" aria-label="Menu utama">
+          <a href="#buat" data-page="buat"><span>Buat</span></a>
+          <a href="#banyak" data-page="banyak"><span>Banyak</span></a>
+          <a href="#pindai" data-page="pindai"><span>Pindai</span></a>
+          <a href="#riwayat" data-page="riwayat"><span>Riwayat</span></a>
+        </nav>
+        <div class="top-actions">
+          <button type="button" id="install-btn" class="btn btn-sm" hidden>Pasang</button>
+          <button type="button" id="theme-btn" class="btn btn-ghost btn-icon"></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="wrap" tabindex="-1">
+      <section id="page-buat" class="page" aria-label="Buat kode QR"></section>
+      <section id="page-banyak" class="page" aria-label="Buat banyak kode QR" hidden></section>
+      <section id="page-pindai" class="page" aria-label="Pindai kode QR" hidden></section>
+      <section id="page-riwayat" class="page" aria-label="Riwayat" hidden></section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>Semua kode QR dibuat dan dibaca langsung di perangkatmu. Tidak ada data yang dikirim ke server, dan aplikasi tetap jalan saat offline.</p>
+      <p id="ios-tip" hidden>Di iPhone/iPad: ketuk tombol Bagikan lalu “Tambah ke Layar Utama” supaya bisa dibuka seperti aplikasi.</p>
+    </footer>
+
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <div id="print-area" aria-hidden="true"></div>
+    <noscript><p class="wrap">Aplikasi ini butuh JavaScript. Aktifkan JavaScript di browser kamu.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

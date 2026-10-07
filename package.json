@@ -1,0 +1,27 @@
+{
+  "name": "qr-studio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "TZ=UTC vitest run",
+    "icons": "node scripts/icons.mjs"
+  },
+  "description": "Pembuat kode QR gratis, tanpa login, bisa dipakai offline.",
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "fflate": "^0.8.3",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.3"
+  },
+  "private": true,
+  "type": "module"
+}
